@@ -1,0 +1,93 @@
+@keyframes down {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* header {
+  animation: down 1s 1;
+} */
+.Sign-Out{
+  all:revert;
+}
+
+.main-list {
+  padding: 20px;
+  font-size: 13px;
+  position: relative;
+}
+
+.main-link {
+  padding: 8px 15px;
+}
+
+.main-link:hover,  .main-link.active{
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+}
+
+.myheader .sfn {
+  background-color: teal;
+}
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.myheader ul.ul{
+  display: flex;
+  align-items: baseline;
+}
+
+.myheader ul.langUl{
+  display: none;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  left: -16px;
+  width: 130px;
+  background-color: #1b1b1b;
+
+}
+.myheader ul.langUl li {
+  padding: 5px;
+  text-align: start;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.13s;
+}
+.myheader ul.langUl li i{
+  font-size: 15px;
+
+}
+.myheader ul.langUl li:hover{
+  background-color: #151515;
+  font-size: 15px;
+  
+}
+li.langLi:hover ul.langUl{
+  display: block;
+  cursor: pointer;
+}
+
+li.langLi p{
+  cursor: pointer;
+  color: white;
+}
+
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+  display: none;
+}

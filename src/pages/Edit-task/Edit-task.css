@@ -1,0 +1,192 @@
+.parent-main{
+  min-height: calc(101vh - 133px);
+}
+/** Title */
+.parent-main .title-input{
+  background-color:transparent;
+  color: white;
+  font-style: 22px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+.parent-main .title-input:focus{
+  outline: none;
+}
+.parent-main .editTitle h1{
+  text-align: center;
+}
+.parent-main .editTitle .fa-pen-to-square{
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.2s;
+}
+.parent-main .editTitle .fa-pen-to-square:hover{
+  font-size: 18px;
+}
+.Dark .parent-main{
+background-color: black;
+}
+
+/** sub task section */
+.parent-main section.sub-task{
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.5rem;
+}
+.parent-main section.sub-task .parent-time{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.parent-main #chackbox{
+  width: 15px;
+  height: 15px;
+  accent-color: teal;
+}
+.parent-main #chackbox:hover{
+  cursor: pointer;
+}
+.parent-main label{
+  position: relative;
+  bottom: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.parent-main section.sub-task ul{
+  margin-top: 15px;
+}
+.parent-main section.sub-task ul li{
+  margin: 10px 15px;
+  background-color: rgb(56, 71, 84);
+  border-radius: 3px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  animation: newSubtask 2s;
+}
+.parent-main section.sub-task .parent-of-add-cancel-btns{
+  animation: newSubtask 1.5s;
+}
+@keyframes newSubtask {
+  0%   { scale:0;}
+  50%   { scale:1.1;}
+  100% { scale:1;}
+
+}
+.parent-main section.sub-task ul li:hover{
+  border-left:5px solid antiquewhite;
+}
+.parent-main section.sub-task ul li i{
+  font-size:large;
+  position: relative;
+  top: 20px;
+  right: 15px;
+  color: brown;
+}
+.parent-main section.sub-task ul li i:hover{
+  font-size: larger;
+}
+.parent-main section.sub-task ul li i:active{
+  scale: 0.8;
+}
+.parent-main section.sub-task ul li p{
+  margin-left: 10px;
+  margin-top: 18px;
+}
+
+
+/** Buttons section */
+.parent-main section.buttons div{
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  margin: 10px auto;
+}
+.parent-main section.buttons div .delete{
+  background-color: crimson;
+  cursor: pointer;
+}
+.parent-main section.buttons div .Add-more{
+  background-color: teal;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.parent-main section.buttons div button{
+  height: 30px;
+  transition: 0.2s;
+}
+.parent-main section.buttons div button:active{
+  scale: 0.8;
+}
+/** Style for btns Add & Cancel  */
+.parent-main .parent-of-add-cancel-btns{
+  max-width: 620px;
+  border-radius: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 60px;
+  background-color: darkslategray;
+  }
+.parent-main .parent-of-add-cancel-btns button{
+  margin-top: 14px;
+  margin-left: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+.parent-main .parent-of-add-cancel-btns button:active{
+  scale: 0.8;
+  border-radius: 0px;
+}
+.parent-main .parent-of-add-cancel-btns input{
+  margin-left: 8px;
+  padding: 3px 20px;
+
+}
+.parent-main .parent-of-add-cancel-btns button.Add ,
+.parent-main .parent-of-add-cancel-btns button.Cancel{
+  background-color: teal;
+  border-radius: 3px;
+}
+
+/** This style for loading */
+.parent-main .loading{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/** colors for light mode */
+.Light .parent-main section.editTitle h1 input ,
+.Light .parent-main section.editTitle h1 i{
+  color:black;
+}
+.Light .parent-main section.sub-task .parent-time div label,
+.Light .parent-main section.sub-task .parent-time{
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+.Light .parent-main section.sub-task ul li{
+  background-color: darkslategray;
+}
+.Light .parent-main section.sub-task ul li:hover{
+  border-left:5px solid teal;
+}
+.Light .parent-main section.sub-task div.parent-time  p .time{
+  color: black;
+}
+
