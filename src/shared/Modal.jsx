@@ -15,8 +15,6 @@ const Modal = ({closeIcon , children}) => {
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.5);
       }
-      
-      
       .modal{
         background-color: whitesmoke;
         width: 400px;
@@ -29,7 +27,6 @@ const Modal = ({closeIcon , children}) => {
         scale: 1;
         animation : mymove 0.8s;
         overflow-y: scroll;
-
       }
       @keyframes mymove{
         0% { scale:0; transform: translateY(-100vh);}
